@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html 1ang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <title>Document</title>
+    <style>
+        div.box{background-color: yellow;}
+
+        div.item{
+            width: 100px; height:100px;
+        }
+
+        div.item1{/*width:100px; height: 100px;*/
+        background-color:  red;
+        }
+        div.item2{width:150px; height: 150px;
+        background-color: green;
+        }
+        div.item3{/*width:100px; height: 100px; */
+        background-color:  blue;}
+        div.item4{width:300px; height: 100px; 
+        background-color:  pink;
+        }
+        div.item1{float: left;}
+        div.item2{float: left;}
+        div.item3{float: left;}
+        /* div.item4{clear: both;} */
+        .clearfix{clear: both;}
+
+    </style>
+</head>
+<body>
+    <div class="box"> 
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+        <div class="clerfix">
+            <div class="item item4">item4
+    </div>
+    <!--div가 '부모' 이고, class가 변수선언 같다, item이 자식이자 변수선언 같은거다.-->
+    
+</body>
+
+
+
+
+
+
+
+</html>

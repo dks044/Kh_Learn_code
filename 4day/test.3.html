@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html 1ang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <title>Document</title>
+    <style>
+        div { border:1px solid red;}
+        .box{
+            margin:100px 100px;
+            display: inline-block;
+            margin:0 auto;
+            /*margin:0 auto 는 중앙정렬 속성*/
+            width:200px; height: 200px;
+            background-color: yellow;
+            /* position: relative; */
+        }
+        .item {
+            display: inline-block;
+            width:50px; height: 50px;
+            background-color: blue;
+            /* position: static; */
+            position: sticky;
+            right:10px;
+            bottom:10px;
+            
+            /*기준점이 본래 있었던 위치에서 이동*/
+            /* postion 에서 속성 선택후, top, left 등으로 위치 지정 */
+        }
+        .sticky{
+            background-color: greenyellow;
+            padding:5px;
+            position: sticky;
+            /* 스크롤을 기준으로 고정배치, 쇼핑몰처럼 스크롤 내리거나 올리면 따라온다, 
+               지정지점에서부터*/
+            top:50px;
+            right:20px;
+            width:100px;
+            height:200px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item">item</div>
+    </div>
+    <div class="sticky">Lorem ipsum dolor sit amet consectetur </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi cumque deserunt, similique optio debitis saepe a repudiandae sed mollitia necessitatibus adipisci dolore exercitationem molestiae quod vitae iste harum aut illum.
+        Aut veritatis totam nulla deleniti quia neque odit excepturi placeat dolores, ipsum esse iste voluptatibus accusantium vitae, laborum, eaque ex consequatur quaerat quo officiis praesentium dolor ducimus laudantium? Corrupti, quam!
+        Voluptates, eos omnis veritatis accusantium amet cum non rem tempore autem ipsum deleniti quos facere iusto odio libero modi placeat error eveniet quo possimus. Provident molestiae voluptates nemo enim architecto?
+    </p>
+    
+</body>
+</html>

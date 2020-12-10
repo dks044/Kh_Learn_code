@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {margin:0; padding:0;}
+    .body{
+      background-color: white;
+    }
+    .main > .login {
+      /*최상위메뉴*/
+      position:fixed;
+      float: top;
+      background-color: black;
+      color:white; 
+      width:100%;height:50px; margin:0 auto;
+      text-align: right;
+      font-size: 0.8rem; color:white; font-weight: bold;
+      
+    }
+    .login h6 {
+      /*최상위 메뉴 정렬 */
+      
+      
+    }
+    .header > .maintheme{
+      display: block;
+      width:600px; height:150px; margin: 0 auto;
+      
+    }
+
+    .maintheme {
+      display: block;
+      width:600px; height:150px; margin: 0 auto;
+    }
+
+    .maintheme img {
+      
+      display: block;
+      width:600px; height:150px; margin: 0 auto;
+    
+
+     
+    }
+    .nav {
+      position: relative;
+      display: block;
+      background-color: black;
+      width:600px; height:50px; margin: 0 auto;
+      text-align: center;
+    
+    }
+    .nav > .mainmenu ul {
+      display: block;
+      list-style: none;
+      padding-top:12.5px;
+      
+    }
+    .mainmenu li {
+      display: inline;
+    }
+   
+
+    .aside {
+      
+      width:20%; height:600px; margin:0 auto;
+      background-color: lightskyblue; float:left;
+    }
+    .section {
+      
+      width:80%; margin:0 auto;
+      background-color: lightcyan; float:left; height:600px;
+    }
+    .asdf{
+      width: 600px; height: 600px; margin:0 auto;
+      background-color: lightcyan;
+    }
+
+    
+
+    .section > .box {
+      padding: 0.3px;
+    }
+    .box {
+      margin-top: 10px;
+      background-color: white;
+      width:400px; height:500px; margin:0 auto;
+    }
+    .footer {
+      width:600px; height:70px; margin:0 auto;
+      float: bottom;
+      bottom:0px;
+      background-color: gray;
+      clear: both;
+    }
+    .footer p {
+      width:600px; margin:0 auto;
+      font-size: 0.8rem;
+      color:white;
+      font-weight: bold;
+      text-align: center;
+    }
+    
+  </style>
+</head>
+<body class="body">
+
+  <main class="main">
+    <div class="login">
+      <h6>로그인 ㅣ 회원가입&nbsp;&nbsp;&nbsp;</h6>
+    </div>
+  </main>
+
+  <header>
+    <div class="header">
+      <div class="maintheme">
+        <img src="https://cdn.pixabay.com/photo/2016/07/01/23/16/amusement-park-1492099_960_720.jpg" 
+        >
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="mainmenu">
+     <ul>
+       <li><a href="">웹표준</a></li>
+       <li><a href="">자바</a></li>
+       <li><a href="">안드로이드</a></li>
+       <li><a href="">데이터베이스</a></li>
+       <li><a href="">스프링</a></li>
+     </ul>
+    </div>
+  </nav>
+
+    
+    <div class="asdf">
+      <aside class="aside">
+        
+      </aside>
+      <div class="hwe">
+        <p><h2 style="text-align: center;">회 원 가 입</h2></p>
+      </div>
+    
+      <section class="section">
+        <div class="box">
+          
+          <fieldset style="border-style: none;">
+          <label>아이디</label><br>
+          <input type="text"><br>
+          <label>비밀번호</label><br>
+          <input type="password"><br>
+          <label>비밀번호확인</label><br>
+          <input type="password"><br>
+          <label>전화번호</label><br>
+          <input type="tab"><br>
+          <label>별칭</label><br>
+          <input type="text"><br>
+          <label>지역</label><br>
+          <select name="지역">
+            <option>== 선택 ==</option>
+          </select><br>
+          <label>성별</label><br>
+          <input type="checkbox" value="1">남자
+          <input type="checkbox" value="2">여자<br>
+          <label>취미</label><br>
+          <input type="checkbox">독서
+          <input type="checkbox">음악감상
+          <input type="checkbox">운동
+          <input type="checkbox">게임<br>
+          <label>생년월일</label><br>
+          <input type="date" value="2020-10-21"><br><br>
+          <input type="button" value="회원가입">
+          </fieldset>
+      </div>
+      </section>
+
+      <footer>
+        <div class="footer">
+        <p>Copyright by Gildong Hong. All Rights Reserved.</p>
+        </div>
+      </footer>
+
+    </div>
+  
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <script>
+    //4-1
+    var obj = document.getElementById("div1");
+    //4-2
+    obj.addEventListener("click",function f(){ });
+  </script> -->
+</head>
+<body>
+  
+  <div id="div1">안녕하세용</div>
+  <script>
+    //1) id가 "div1"인 DOM 객체를 알아내는 코드를 작성하라.
+    const obj = document.getElementById('div1');
+    //2) <div> 태그를 클릭하면 f()함수가 실행하도록 addEventListener()를 이용하여 이벤트 리스너를 등록하라.
+    // obj.addEventListener('click',f);  //두번쨰 매개값이 이벤트핸들러
+
+    // //3) <div> 태그를 클릭하면 f()함수가 실행하도록 onclick 프로퍼티 이용하여 이벤트 리스너를 등록하라.
+    // obj.onclick = f;
+    
+    // obj.onclick = function() {
+    //   obj.style.background ='orchid';
+    // }
+
+    obj.onclick = () => {
+      obj.style.backgroundColor = 'orchid';
+    }
+    
+    // function f() {
+    //   obj.style.backgroundColor = "orchid";
+    // }
+  </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * { box-sizing:border-box;}
+    ul {
+      margin:0; padding:0;
+      list-style: none;
+      background-color: #333;
+      color:#eee;
+      border: 2px solid red;
+      overflow: hidden;
+      text-align: center;
+    }
+     ul li {
+      /* display: inline-block;
+      color:#eee;
+      padding: 0.3rem 0.5rem;
+      background-color: #111; */
+      float: left;
+      padding: 0.3rem;
+      width:70px;
+
+    } 
+    .clearfix{
+      clear: both;
+    }
+    ul li:hover{
+      text-decoration: underline;
+      cursor:pointer;
+      background-color: #555;
+    }
+    ul > div {
+      /* clear: both;
+      border:3px solid orchid; */
+    }
+    .wrapper {
+      width:210px;
+      margin:0 auto;
+    }
+    
+  </style>
+</head>
+<body>
+  <ul>
+    <div class="wrapper">
+      <li class="item1">menu1</li>
+      <li class="item2">menu2</li>
+      <li class="item3">menu3</li>
+    </div>
+  <!--  ul>li.item$*3{menu$}  -->
+  <div class="clearfix"></div>
+  <!--흐름을 끊기위한 용도-->
+</ul>
+</body>
+</html>

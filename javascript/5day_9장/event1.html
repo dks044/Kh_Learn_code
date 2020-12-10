@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    form {
+      background-color: yellow;
+    }
+    input {
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+
+  <form  action="">
+    <input type='checkbox'>목요일
+  </form>
+  <script>
+    const $input = document.querySelector("input[type=checkbox]");
+    const $form = document.querySelector('form');
+
+    $input.addEventListener('click',function(evt) {
+      // console.log(evt);
+      console.log('input : 버블링');
+    },false);
+    $form.addEventListener('click',function(evt) {
+      // console.log(evt);
+      console.log('form : 버블링');
+    },false);
+    
+    $input.addEventListener('click',function(evt) {
+      // console.log(evt);
+      console.log('input : 캡쳐링');
+    },true); //true는 캡쳐링 단계
+    $form.addEventListener('click',function(evt) {
+      // console.log(evt);
+      console.log('form : 캡쳐링');
+    },true);
+    // false : 버블링이 기본값
+    // 캡쳐링은 순차적으로
+    // 버블링은 밑에서 위로 올라오는
+    // 안에있는걸 먼저 실행하고 싶으면 '버블링(false)'을 쓴다.
+  </script>
+</body>
+</html>

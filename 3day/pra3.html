@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html 1ang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <title>Document</title>
+    <style>
+        /* {box-sizing:border} <-박스크기 조절은 'border' 로 쓴다는 뜻일까? */
+        html, body {height:100%; margin: 0;}
+        body {background-color: #ccc; text-align: center; color: #fff}
+        /* 텍스트에 스타일적용 */
+        body {border:1px solid red}
+        header {height:20%; margin:5px;}
+        header,nav,aside,footer,article {background-color: #666;}
+        /* 복수 적용은 ', 콤마 사용'  */
+        section{float:left;width:56%; height:60%; background-color:#999; margin-left: 1%;}
+        nav{float:left; background-color: tomato; width:20%; height:60%; margin-left: 1%;}
+        aside{width:20%;height:60%;float: left; background-color: thistle; margin-left: 1%;}
+        footer.bottom {height:100%;background-color: palevioletred;}
+        /* 옆에 .점 붙고 뒤에 bottom은 변수이름일까 특정 포지션 이름일까 */
+        /* 옆에 .점 붙고 뒤에 bottom은 특정 포지션이름이 아닌 임의의 변수 이름이다. */
+        div.clearfix{height: 20%; MARGIN:5PX;}
+        
+        .clearfix{
+            clear:both; /* float 중지 */
+        }
+    </style>
+</head>
+<body>
+   <header>header</header>
+   <nav>nav</nav>
+   <section>
+       section
+       <header>header</header>
+       <article>article</article>
+       <footer>footer</footer>
+   </section>
+    <aside>aside</aside> 
+    <div class="clearfix">
+        <!--class는 변수 선언(CSS스타일) 한걸 불러온다.-->
+    <footer class="bottom">footer</footer> <!--class로 bottom(변수로 만든)이라는 스타일을 적용했다. -->
+    </div>
+<!-- 시멘틱태그다. -->
+</body>
+
+</html>

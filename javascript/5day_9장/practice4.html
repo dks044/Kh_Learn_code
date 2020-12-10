@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이미지 커서 만들기</title>
+  <style>
+    img{
+      width: 50px;
+      height: 50px;
+      position: fixed;
+      transition: 0.05s;
+    }
+  </style>
+</head>
+<body>
+  <h3>이미지 커서 만들기</h3>
+  <hr>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. In veritatis officia impedit quos amet perspiciatis optio voluptatum quaerat culpa. Reprehenderit temporibus voluptatem ipsa quam sapiente eum a. Officiis, aperiam esse.
+  </p>
+  <div>
+  <img src="https://www.pngkit.com/png/full/622-6226534_the-images-may-appear-with-a-colored-background.png">
+  <script>
+    const $img = document.querySelector("img");
+
+    document.addEventListener("mouseover",function(evt){
+      // $img.style.left = evt.clientX;
+      // $img.style.top = evt.clientY;
+      $img.style.left = evt.clientX + 'px';
+      $img.style.top = evt.clientY + 'px';
+    });
+  </script>
+
+</body>
+</html>

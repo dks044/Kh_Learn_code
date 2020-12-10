@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<style>
+    html, body {
+        margin:0; padding:0; height:70%; 
+    }
+
+        .nav{
+        width: 10%; height: 500%; float:left;
+        background-color: orange;
+
+    }
+        .section{
+        width: 100%; height: 500%; 
+        background-color: skyblue;
+    }
+    fieldset 
+   { width: 45%; height: 40%; float: left; 
+   background-color: white; margin: 20%;
+   
+   border-color: red;
+    border-width: 3px;
+    list-style: none;
+    }
+
+    
+</style>
+
+
+
+</head>
+<body>
+    <nav class="nav"></nav>
+    <section class="section">
+        
+            <center><h1>회 원 가 입</h1> <br></center>
+        
+   
+   <fieldset>
+    
+    <form>
+   <h3>아이디</h3>
+   <input type="text" value=""><br>
+
+   <h3>비밀번호</h3>
+   <input type="password" value=""><br>
+
+   <h3>비밀번호 확인</h3>
+   <input type="password" value=""><br>
+
+   <h3>전화번호</h3>
+   <input type="number" value=""><br>
+
+   <h3>별칭</h3>
+   <input type="text" value=""><br>
+
+    <h3>지역</h3>
+    <input type="text" name="country" list="countries" value="==선택=="><br>
+		<datalist id="countries">
+			<option value="가나">
+			<option value="스위스">
+			<option value="브라질">
+		</datalist>
+    <h3>성별</h3>
+    
+        <li>
+            <label><input type="radio" checked>남자</label>
+            <label><input type="radio" name="frult">여자</label>
+        </li>
+
+    <h3>성별</h3>
+    
+        <li>
+            <label><input type="checkbox">독서</label>
+            <label><input type="checkbox">음악감상</label>
+            <label><input type="checkbox">운동</label>
+            <label><input type="checkbox">게임</label>
+        </li>
+        <h3>생년월일</h3>
+        <input type="date" value="2020-10-21"> <br><br>
+
+        <input type="submit" value="회 원 가 입">
+
+
+
+
+
+</form>
+
+</fieldset>
+</section>
+
+
+</body>
+
+
+
+</html>

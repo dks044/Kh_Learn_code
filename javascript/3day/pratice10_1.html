@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>book 객체 만들기</title>
+  <script>
+    let bookArray = new Array(5); // book의 객체 배열 사이즈는 5개
+    function addArray(n,i){
+      let s = n.split(",");
+      let book = new Object; //book이란 이름의 객체생성
+      book.title = s[0];
+      book.author = s[1];
+      book.price = parseInt(s[2]);
+      // 객체배열의 첫번쨰는 타이틀, 두번쨰는 저서, 세번쨰는 가격
+      bookArray[i] = book;
+      // 객체배열bookArray의 '인덱스' 번쨰는 
+      // book객체가 들어간다(타이틀, 저서, 가격을 넣은)
+      document.write(s[0]+","+s[1]+","+book.price+"<br>");
+    }
+  </script>
+</head>
+<body>
+  <h3>book 객체 만들기</h3>
+  <hr>
+  <script>
+    for(let i=0;i<bookArray.length;i++){
+      let input = prompt("콤바(,)로 분리하면서 책제목 저자 가격 순으로 입력","책제목 저자 가격");
+      addArray(input,i);
+    }
+
+    let expensive = new Object(); //객체배열중 가장 비싼 책을 찾기 위한 객체생성
+    expensive.price = 0;
+    for(let i=0;i<bookArray.length;i++){
+      if(bookArray[i].price > expensive.price){ 
+        //bookArray의 인덱스번쨰의 가격과 일일이 비교하고, 대입하면서
+        //최대값을 구한다.
+        expensive = bookArray[i];
+      }
+    }
+    document.write("<hr>"+"가장 가격이 비싼 책은 "+expensive.title);
+
+  </script>
+</body>
+</html>
